@@ -1,0 +1,109 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: "Nunito", sans-serif;
+    font-size: large;
+    font-weight: 600;
+  }
+  
+  .cv-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fdfbfb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  
+  main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 20px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  header .info {
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  header h1 {
+    margin: 0 auto;
+    font-size: 2em;
+    color: #007b5e;
+  }
+  
+  header p {
+    margin: 5px auto;
+    font-size: 1.8em;
+  }
+  .side-bar{
+    margin: 5px;
+    border-right:solid 0.5px #b9b7b7;
+    padding: 0.5em;
+  }
+  .containt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+  h2 {
+    font-size: 20px;
+    color: #007b5e;
+    margin-top: 20px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  .skills ul li {
+    margin-bottom: 10px;
+  }
+
+  hr {
+    width: 150px;
+    height: 1px;
+    background-color: #d3d3d3;
+    border: none;
+    margin: 20px auto;
+  }
+  
+  
+  .job, .education-item {
+    margin-bottom: 15px;
+  }
+  
+  .pdf {
+    width: 5em;
+    position: fixed;
+    text-align: center;
+    bottom: 50px;
+    right: 50px;
+  }
+  .pdf:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
