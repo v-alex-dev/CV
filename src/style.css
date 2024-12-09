@@ -1,109 +1,179 @@
-/* style.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    font-family: "Nunito", sans-serif;
-    font-size: large;
-    font-weight: 600;
-  }
-  
-  .cv-container {
-    max-width: 900px;
-    margin: 20px auto;
-    background: #fdfbfb;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-  }
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: large;
+  font-weight: 600;
+}
 
-  
+.cv-container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fdfbfb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header .info {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0 auto;
+  font-size: 2em;
+  color: #007b5e;
+}
+
+header p {
+  margin: 5px auto;
+  font-size: 1.8em;
+}
+
+.side-bar {
+  margin: 5px;
+  border-right: solid 0.5px #b9b7b7;
+  padding: 0.5em;
+}
+
+.containt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h2 {
+  font-size: 20px;
+  color: #007b5e;
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.skills ul li {
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 150px;
+  height: 1px;
+  background-color: #d3d3d3;
+  border: none;
+  margin: 20px auto;
+}
+
+.job,
+.education-item {
+  margin-bottom: 15px;
+}
+
+.pdf {
+  width: 4em;
+  position: fixed;
+  text-align: center;
+  bottom: 50px;
+  right: 20px;
+  z-index: 10;
+}
+
+.pdf:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Styles responsifs pour les petits écrans */
+@media screen and (max-width: 768px) {
   main {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    gap: 20px;
+      display: flex;
+      flex-direction: column;
   }
-  header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+
+  .side-bar {
+      border-right: none;
+      margin-bottom: 20px;
   }
-  
-  
-  header .info {
-    margin: 0 auto;
-    width: 50%;
-  }
-  
+
   header h1 {
-    margin: 0 auto;
-    font-size: 2em;
-    color: #007b5e;
+      font-size: 1.8em;
   }
-  
+
   header p {
-    margin: 5px auto;
-    font-size: 1.8em;
-  }
-  .side-bar{
-    margin: 5px;
-    border-right:solid 0.5px #b9b7b7;
-    padding: 0.5em;
-  }
-  .containt{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-  }
-  h2 {
-    font-size: 20px;
-    color: #007b5e;
-    margin-top: 20px;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 8px;
-  }
-  
-  .skills ul li {
-    margin-bottom: 10px;
+      font-size: 1.5em;
   }
 
-  hr {
-    width: 150px;
-    height: 1px;
-    background-color: #d3d3d3;
-    border: none;
-    margin: 20px auto;
-  }
-  
-  
-  .job, .education-item {
-    margin-bottom: 15px;
-  }
-  
   .pdf {
-    width: 5em;
-    position: fixed;
-    text-align: center;
-    bottom: 50px;
-    right: 50px;
+      width: 3.5em;
+      bottom: 20px;
+      right: 10px;
   }
-  .pdf:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles responsifs pour les très petits écrans (smartphones) */
+@media screen and (max-width: 480px) {
+  body {
+      font-size: medium;
+  }
+
+  .cv-container {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  header h1 {
+      font-size: 1.5em;
+  }
+
+  header p {
+      font-size: 1.2em;
+  }
+
+  .pdf {
+      width: 3em;
+      bottom: 15px;
+      right: 5px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  ul {
+      padding-left: 10px;
+  }
+
+  ul li {
+      margin-bottom: 6px;
   }
 
   footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
+      font-size: 12px;
   }
-  
+}
