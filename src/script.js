@@ -1,4 +1,5 @@
 document.getElementById("pdf").addEventListener("click", generatePDF);
+window.screen.width < 768 ? document.getElementById("pdf").style.display = "none" : null;
 
 function generatePDF() {
   // Sélectionner l'élément HTML que vous souhaitez capturer
@@ -28,3 +29,5 @@ function generatePDF() {
     pdf.save("CV_Alexandre_Vens.pdf");
   });
 }
+
+
