@@ -29,4 +29,4 @@ Ce CV peut être hébergé sur **GitHub Pages** ou tout autre service d'héberge
 
 1. Clonez le dépôt GitHub :
    ```bash
-   git clone https://github.com/ton-username/projet-cv.git
+   git clone https://github.com/v-alex-dev/projet-cv.git
