@@ -1,5 +1,7 @@
 *,*::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,6 +17,15 @@ body {
   justify-content: center;
 }
 
+h1, h2, h3,h4, h5 {
+  padding: 5px;
+  margin-block-start: 5px;
+}
+
+p {
+  padding-block-end: 0.5rem;
+  margin-block-end: 0.1rem;
+}
 .cv-container {
   max-width: 900px;
   background: #fdfbfb;
@@ -37,19 +48,17 @@ main {
 header {
   display: flex;
   align-items: center;
-  margin-block-end: 2rem;
 }
 
 header .info {
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  margin-block-start: 1rem;
 }
 
 header h1 {
   margin: 0 auto;
-  margin-inline-end: 2rem;
+  margin-inline-end: 1rem;
   font-size: 2em;
   color: #007b5e;
 }
@@ -62,26 +71,25 @@ header p {
 .soft-skills{display: grid;
   font-weight: 900;
   list-style: none;
-  padding: 0;
+  padding: 1rem;
   grid-template-columns: repeat(5,1fr);
 }
 
-.item-skill{
-  margin-inline-start: 1rem;
-}
 .side-bar {
   border-right: solid 0.5px #b9b7b7;
+  padding-inline-end: 2rem;
 }
 
 .containt {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-rows: 0.5fr, 1fr, 1fr ;
+  gap: 1rem;
 }
 
 h2 {
   font-size: 20px;
   color: #007b5e;
+  margin: 0;
 }
 
 ul {
@@ -94,12 +102,6 @@ p {
 
 dt {
   text-decoration: underline;
-}
-hr {
-  width: 150px;
-  height: 1px;
-  background-color: #d3d3d3;
-  border: none;
 }
 
 .job,
