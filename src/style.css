@@ -44,25 +44,30 @@ header .info {
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  margin-block-start: 1rem;
 }
 
 header h1 {
   margin: 0 auto;
+  margin-inline-end: 2rem;
   font-size: 2em;
   color: #007b5e;
 }
 
 header p {
-  margin: 5px auto;
+  margin: 1.3rem auto;
   font-size: 1.8em;
 }
 
-.soft-skills{
-  display: flex;
-  justify-content: space-around;
+.soft-skills{display: grid;
   font-weight: 900;
-  margin-block-start: 2rem;
   list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.item-skill{
+  margin-inline-start: 1rem;
 }
 .side-bar {
   border-right: solid 0.5px #b9b7b7;

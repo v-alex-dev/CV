@@ -13,7 +13,7 @@ await page.pdf({
   path: "CV_Alexandre_Vens.pdf",
   format: "A4",
   printBackground: false,
-  margin: { top: "5mm", bottom: "5mm", left: "15mm", right: "15mm" },
+  margin: { top: "0mm", bottom: "0mm", left: "15mm", right: "15mm" },
   preferCSSPageSize: true  // IMPORTANT pour respecter @page et @media print
 });
 
