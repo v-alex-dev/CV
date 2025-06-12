@@ -1,0 +1,24 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Ce projet est une démonstration d'un Curriculum Vitae (CV) moderne, conçu avec des technologies web pour offrir une présentation dynamique et professionnelle.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-pdf": "node generate-pdf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v-alex-dev/CV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v-alex-dev/CV/issues"
+  },
+  "homepage": "https://github.com/v-alex-dev/CV#readme",
+  "dependencies": {
+    "puppeteer": "^24.9.0"
+  }
+}

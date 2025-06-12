@@ -1,146 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Alexandre Vens">
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="CV en ligne d'Alexandre Vens, développeur web Fullstack avec des compétences en JavaScript, TypeScript, GraphQL, et frameworks modernes comme Angular et React.">
-  <meta name="keywords" content="CV, développeur web, fullstack, JavaScript, TypeScript, Angular, React, GraphQL, NestJS, NextJS, HTML, CSS, SQL, GraphQl, C#, Python, PHP">
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Alexandre Vens" />
+<meta name="robots" content="index, follow" />
 
-  <!-- Open Graph meta tags -->
-  <meta property="og:title" content="CV Alexandre Vens - Développeur Web Fullstack">
-  <meta property="og:description" content="Découvrez le CV d'Alexandre Vens, développeur web Fullstack passionné par les technologies modernes comme Angular, React, et GraphQL.">
-  <meta property="og:url" content="https://v-alex-dev.github.io/CV/">
-  <meta property="og:type" content="website">
+<!-- Meta Description (SEO + SERP) -->
+<meta name="description" content="Alexandre Vens,Vens,CV d'Alexandre Vens, développeur web Fullstack expérimenté, maîtrisant JavaScript, TypeScript, Angular, React, Next.js, NestJS et autres technologies modernes." />
+
+<!-- Meta Keywords (moins utile aujourd'hui, mais gardés avec des mots ciblés) -->
+<meta name="keywords" content="Alexandre Vens, développeur web, fullstack, développeur fullstack, JavaScript, TypeScript, Angular, React, Next.js, NestJS, HTML, CSS, SQL, Python, C#, PHP, portfolio développeur, CV développeur" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="Alexandre Vens - Développeur Web Fullstack" />
+<meta property="og:description" content="Découvrez le CV interactif d'Alexandre Vens, développeur web fullstack passionné, expert en JS, TS, Angular, React, Next.js, et plus encore." />
+<meta property="og:url" content="https://v-alex-dev.github.io/CV/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://v-alex-dev.github.io/CV/assets/og-image.jpg" /> <!-- Facultatif mais recommandé -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Alexandre Vens - Développeur Web Fullstack" />
+<meta name="twitter:description" content="Explorez le CV en ligne d'Alexandre Vens, développeur web Fullstack passionné par les technologies modernes." />
+<meta name="twitter:image" content="https://v-alex-dev.github.io/CV/assets/og-image.jpg" /> <!-- même image que og:image -->
+
 
   <title>CV Alexandre Vens</title>
-  <link rel="stylesheet" href="./src/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="./src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <img class="pdf" id="pdf" src="./assets/pdf_9496432.png" alt="Télécharger le cv en PDF">
   <div class="cv-container">
     <header>
       <div class="info">
         <h1>Alexandre Vens</h1>
         <p>Développeur Web Fullstack</p>
+        <ul class="soft-skills">
+          <li class="item-skill">Team working</li>
+          <li class="item-skill">Adaptability</li>
+          <li class="item-skill">Resilience</li>
+          <li class="item-skill">Collaborative mindset</li>
+          <li class="item-skill">Learning agility</li>
+        </ul>
       </div>
     </header>
     <main>
-      <div class="side-bar">
+      <aside class="side-bar">
         <section class="personal-info">
           <h2>Données personnelles</h2>
-          <ul>
-            <li>Adresse : 
-              <ul>
-                <li>Belgique, Huissignies 7950</li>
-              </ul>
-            </li>
-            <li>Téléphone :
-              <ul>
-                <li> Sur demande par mail</li>
-              </ul>
-            </li>
-            <li>Email : 
-              <ul>
-                <li>dev.alexandre.cv@gmail.com </li>
-              </ul>           
-            </li>
-            <li>Permis : 
-              <ul>
-                <li>B</li>
-                <li>Véhicule personnel</li>
-              </ul>
-            </li>
-            <li>Langues : 
-              <ul>
-                <li>Français (langue maternelle)</li>
-                <li>Anglais (niveau A2)</li>
-              </ul>
-            </li>
-          </ul>
+          <dl>
+            <dt>Adresse:</dt>
+            <dd>Huissignies 7950, Belgique</dd>
+            <dt>Téléphone:</dt>
+            <dd>Disponible sur demande par mail</dd>
+            <dt>Email:</dt>
+            <dd>dev.alexandre.cv@gmail.com</dd>
+            <dt>Permis:</dt>
+            <dd>B, véhicule personnel</dd>
+            <dt>Langues:</dt>
+            <dd>Français (natif), Anglais (niveau A2)</dd>
+          </dl>
         </section>
-        <hr>
+        <hr />
         <section class="skills">
-          <h2>Compétences</h2>
-          <ul>
-            <li><strong>Langages fréquents :</strong> 
-              <ul>
-                <li>HTML, CSS, JavaScript/Typescript</li>
-                <li>SQL, GraphQl </li>
-              </ul>
-            </li>
-            <li><strong>Langages occasionnels :</strong>
-              <ul>
-                <li>C#</li>
-                <li>Python</li>
-                <li>PHP</li>
-              </ul>
-            </li>
-            <li><strong>Frameworks utilisés :</strong> 
-              <ul>
-                <li>NestJS (backend-end)</li>
-                <li>Angular (front-end)</li>
-                <li>React (front-end)</li>
-                <li>NextJS (framework react)</li>
-              </ul>
-            </li>
-          </ul>
+          <h2>Compétences:</h2>
+          <h3>Langages fréquents:</h3>
+          <p>HTML, CSS, JavaScript, TypeScript, SQL, GraphQL</p>
+          <h3>Langages occasionnel:s</h3>
+          <p>C#, Python, PHP</p>
+          <h3>Frameworks et outils:</h3>
+          <p>NestJS (back-end), Angular, React, NextJS, Astro, Amplify</p>
+          <h3>Apprentissage</h3>
+          <p>Java, VueJs, WordPress</p>
         </section>
-      </div>
-      <div class="containt">
-        <section class="presentation">
+      </aside>
+      <section class="containt">
+        <article class="presentation">
           <h2>Présentation</h2>
           <p>
-            Développeur web passionné par la création d'applications et de sites modernes, 
-            je maîtrise plusieurs technologies front-end et back-end. Mon parcours m'a permis 
-            de travailler sur des projets variés, allant de la gestion de données complexes 
-            à la création d'interfaces utilisateurs performantes. Je cherche à intégrer une 
-            équipe dynamique où je pourrai mettre à profit mes compétences techniques et mon 
-            goût pour l'innovation.
+            Développeur web fullstack passionné, je conçois des applications modernes avec rigueur et créativité. Curieux et autodidacte, j’aime explorer de nouvelles technologies et repousser mes limites techniques.
           </p>
-        </section>
-        <hr>
-        <section class="experience">
+          <p>
+            J’apprécie le travail d’équipe, le partage et la résolution collaborative de problèmes. À l’image de ma passion pour la cuisine japonaise, où précision et innovation sont clés, je conçois chaque projet comme une expérience à affiner.
+          </p>
+        </article>
+        <hr />
+        <article class="experience">
           <h2>Expérience professionnelle</h2>
-          <div class="job">
+          <div>
             <h3>Stagiaire Développeur - AVSIT (2024)</h3>
             <ul>
-              <li>Développement de deux sites web avec Astro</li>
-              <li>Création d'un dashboard d'analyse Shopify avec Angular et Amplify</li>
-              <li>Gestion de data & requête à l'aide de BigQuery</li>
-              <li>Appel d'API Shopify à l'aide de GraphQl</li>
+              <li>Création de deux sites web avec Astro</li>
+              <li>Dashboard analytique Shopify (Angular, Amplify)</li>
+              <li>Traitement de données avec BigQuery</li>
+              <li>Appels d'API Shopify via GraphQL</li>
             </ul>
           </div>
-          <div class="job">
+          <div>
             <h3>Stagiaire Développeur - Barestho (2022)</h3>
-            <p>Création d'une maquette d'application de gestion client et employé avec React et Django.</p>
+            <p>Maquettage d'une application de gestion client/employé (React + Django)</p>
           </div>
-        </section>
-        <hr>
-        <section class="education">
+        </article>
+        <hr />
+        <article class="education">
           <h2>Formation</h2>
-          <div class="education-item">
+          <div>
             <h3>Becode, Charleroi (2023-2024)</h3>
-            <p>Formation Fullstack (Angular, Amplify, Astro).</p>
+            <p>Formation développeur Fullstack (Angular, Amplify, Astro)</p>
           </div>
-          <div class="education-item">
+          <div>
             <h3>Technocité (2021-2022)</h3>
-            <p>Formation DotNet.</p>
+            <p>Formation Développement .NET (C#)</p>
           </div>
-        </section>
-      </div>
+        </article>
+      </section>
     </main>
     <footer>
       <p>Références disponibles sur demande.</p>
+       <a href="./assets/CV_Alexandre_Vens.pdf" download>
+         <img class="pdf" id="pdf" src="./assets/pdf_9496432.png" alt="Télécharger le CV en PDF">
+        </a>
     </footer>
   </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-<script src="./src/script.js"></script>
 </html>

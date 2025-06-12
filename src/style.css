@@ -1,16 +1,22 @@
+*,*::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
-  font-size: large;
-  font-weight: 600;
+  font-size: medium;
+  font-weight: 500;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .cv-container {
   max-width: 900px;
-  margin: 20px auto;
   background: #fdfbfb;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -22,11 +28,16 @@ main {
   grid-template-columns: 0.5fr 1fr;
   gap: 20px;
 }
+@media print {
+  .pdf {
+    display: none !important;
+  }
+}
 
 header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-block-end: 2rem;
 }
 
 header .info {
@@ -46,10 +57,15 @@ header p {
   font-size: 1.8em;
 }
 
+.soft-skills{
+  display: flex;
+  justify-content: space-around;
+  font-weight: 900;
+  margin-block-start: 2rem;
+  list-style: none;
+}
 .side-bar {
-  margin: 5px;
   border-right: solid 0.5px #b9b7b7;
-  padding: 0.5em;
 }
 
 .containt {
@@ -61,27 +77,24 @@ header p {
 h2 {
   font-size: 20px;
   color: #007b5e;
-  margin-top: 20px;
 }
 
 ul {
   padding-left: 20px;
 }
 
-ul li {
-  margin-bottom: 8px;
+p {
+  line-height: 1rem;
 }
 
-.skills ul li {
-  margin-bottom: 10px;
+dt {
+  text-decoration: underline;
 }
-
 hr {
   width: 150px;
   height: 1px;
   background-color: #d3d3d3;
   border: none;
-  margin: 20px auto;
 }
 
 .job,
@@ -95,16 +108,16 @@ hr {
   text-align: center;
   bottom: 50px;
   right: 20px;
-  z-index: 10;
+  z-index: 1;
+  transition: all .25s ease-out;
 }
 
 .pdf:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(110%);
 }
 
 footer {
   text-align: center;
-  margin-top: 20px;
   font-size: 14px;
   color: #666;
 }
